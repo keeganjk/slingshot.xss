@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>Slingshot.XSS</title>
+  <style>
+    body {
+     
+      background: url("images/redox_01.png")
+      
+    }
+  </style>
+  <link href="http://fonts.googleapis.com/css?family=Muli" rel="stylesheet" type="text/css">
+
+</head>
+
+<body style="font-family:Muli; margin:0 auto; position:relative" align="center">
+
+  <script src="script.js"></script>
+
+  <h1 style="font-family:Muli; margin:0 auto; position:relative" align="center">Slingshot.XSS v1.0</h1>
+  <h2 style="font-family:Muli; margin:0 auto; position:relative" align="center">Slingshot.XSS is a script that launches pre-loaded</h2>
+  <h2 style="font-family:Muli; margin:0 auto; position:relative" align="center">XSS payloads at a target to test its vulnerabilities.</h2>
+  <h3 style="font-family:Muli; margin:0 auto; position:relative" align="center">Please report all issues to <a href="https://github.com/keeganjk/slingshot.xss/issues">this page</a>.</h3>
+  <div  style="font-family:Muli; margin:0 auto; position:relative" align="center">
+    <a href="https://github.com/keeganjk/slingshot.xss" style="font-family:Muli; margin:0 auto; position:relative" align="center">Source Code / Learn More</a> <br />
+    <a href="https://github.com/keeganjk/slingshot.xss/archive/master.zip" style="font-family:Muli" align="center">Download Latest Version</a>
+  </div>
+  <hr style="height:5px;border:none;color:#333;background-color:#333;" />
+  <br />
+
+  <h3 style="font-family:Muli; margin:0 auto; position:relative" align="center">Enter a URL with <code>*</code> in the place of query.</h3>
+  <h4 style="font-family:Muli; margin:0 auto; position:relative" align="center">Example: <code>https://www.google.com/#q=*</code></h4>
+  <div  style="font-family:Muli; margin:0 auto; position:relative" align="center">
+    <input type="text" id="urlInput" placeholder="Enter a URL" style="font-family:Muli; margin:0 auto; position:relative" align="center"> <button onclick="selectURL()" style="font-family:monospace; margin:0 auto; position:relative" align="center">Submit</button>
+  </div>
+  <p id="url" style="font-family:Muli; margin:0 auto; position:relative" align="center">No Submitted URL</p>
+  <hr />
+
+  <h4 style="font-family:Muli; margin:0 auto; position:relative" align="center">Select a payload:</h4>
+  <h5 style="font-family:Muli; margin:0 auto; position:relative" align="center">Default payloads in <code>payloads/</code></h5>
+  <div  style="font-family:Muli; margin:0 auto; position:relative" align="center">
+    <a href="https://github.com/keeganjk/slingshot.xss/tree/master/payloads" style="font-family:Muli; margin:0 auto; position:relative" align="center">Payload Help</a> <br /> <br />
+  </div>
+  <div style="font-family:Muli; margin:0 auto; position:relative" align="center">
+    <input type="file" id="file"> <button onclick="selectPayload()" style="font-family:Muli; margin:0 auto; position:relative" align="center">Submit</button>
+  </div>
+  <p id="selectedPayload" style="font-family:Muli; margin:0 auto; position:relative" align="center">No Selected Payload</p>
+
+
+</body>
+
+</html>

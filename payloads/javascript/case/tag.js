@@ -1,0 +1,1 @@
+<ScRiPt>alert("xss");</sCrIpT>
