@@ -1,4 +1,5 @@
 # slingshot.xss
+# MOVED TO [https://gitlab.com/keeganjk/slingshot.xss](https://gitlab.com/keeganjk/slingshot.xss)
 [![Donate](https://img.shields.io/badge/donate-%24-green.svg)](https://keeganjk.github.io/donate/)
 
 <pre>
